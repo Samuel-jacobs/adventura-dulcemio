@@ -391,6 +391,14 @@ img.beroni-white {
 .form-item {
 	padding-bottom: 20px;
 }
+.submit-btn {
+	background-color: var(--rose);
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: var(--white-wine);
+	margin-top: 20px;
+}
 
 
 /* -------------------- */
