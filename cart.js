@@ -195,5 +195,5 @@ parentElement.addEventListener('click', (e) => {
 });
 
 
-addCount();
+//addCount();
 updateShoppingCartHTML();
