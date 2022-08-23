@@ -101,6 +101,7 @@ p, a {
 }
 .nav-cart {
 	display: flex;
+	align-items: center;
 }
 
 .nav-cart .cart-link {
@@ -109,6 +110,7 @@ p, a {
 .cart-link .cartBtn {
 	color: black;
 }
+
 
 #cart {
 	z-index: 999999;
