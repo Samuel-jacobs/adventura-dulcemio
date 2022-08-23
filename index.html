@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Adventura Dulcemio Wines| Importers of spanish and portuguese wines</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!--fontawesome-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="topnav fixed-top" id="myTopnav">
+				<div class="nav-logo">
+					<a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo" height="70px" width="70px"></a>
+				</div>
+				<div class="overlay-wrapper">
+					<div class="overlay" id="myNav">
+						<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()" title="close nav"><i class="fas fa-times"></i></a>
+						<div class="navlinks">
+							<a href="index.html#about" class="navlink">About Us</a>
+							<a href="#products" class="navlink">Wines</a>
+							<a href="#contact" class="navlink">Contact</a>
+							<a href="#" class="navlink">Wholesale </a>
+						</div>
+					</div>
+					<div class="nav-cart">
+						<div class="cart-link">
+							<a href="javascript:void(0)" class="cartBtn" onclick="openCart()" title="open cart"><i class="fas fa-cart-plus"></i> </a>
+							<span id="cart-notification"></span>
+						</div>
+						<span onclick="openNav()" class="openBtn" title="open nav"><i class="fas fa-bars"></i></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="cart">
+				<div class="cart-main">
+					<div class="cart-top">
+						<h4 class="title font-weight-bold">Your Cart</h4>
+						<a href="javascript:void(0)" class="closeCart" onclick="closeCart()" title="close cart"><i class="fas fa-times"></i></a>
+					</div>
+					<div id="buyItems">
+						<h4 class="empty">Your cart is empty</h4>
+						<!--<div class="buyItem">
+							<img src="images/product-images/adega-red.png" alt="">
+							<div class="product-summary">
+								<h6>Santa Esperanca White</h6>
+								<p>N2500</p>
+							</div>
+							<div class="product-extra">
+								<button class="deleteBtn" ><i class="fas fa-trash"></i></button
+								<div class="quantity-wrapper">
+									<button id="addQty" class="addQty change-qty">+</button>
+									<p class="product-quantity" id="qty">0</p>
+									<button id="reduceQty" class="reduceQty change-qty">-</button>
+								</div>
+							</div>
+
+							
+						</div>
+						<div class="total-wrapper">
+							<h6>Total</h6>
+							<p id="sumTotal"></p>
+						</div> -->
+						
+					</div>	
+					<div class="total-wrapper hidden  pt-3 pr-4">
+						<h5>Total</h4>
+						<p id="sumTotal"></p>
+					</div>
+					
+					<button class="btn mt-4 checkout hidden">Check out</button>
+					
+				</div>
+			</div>
+		</header>
+		<main>
+			<section id="banner">
+				<div class="banner-text">
+					<h1 class="uppercase">Adventura Dulcemio Wines</h1>
+					<p class="pt-3 pb-4">We bring you only the best quality wines from spain and portugal</p>
+					<a href="#products" class="banner-btn">Shop now</a>
+					
+				</div>
+			</section>
+
+			<section id="about">
+				<div class="about-image">
+					<img src="images/wine-bottle.jpg" alt="">
+				</div>
+				<div class="about-text">
+					<h2 class="uppercase pb-3 header">About us</h2>
+					<p>Adventura Dulcemio is an import company that deals mainly on wine importation and distribution. We import quality, natural wines from portugal and spain. We are the sole importers of the wines: Santa Esperanca and Adega do moleiro (from portugal) and beroni (from spain) in the whole of Nigeria.</p>
+					<p> We supply in wholesale quantities to various bars, gardens and shopping malls in abuja abuja municipal and deliver to other parts of the country. Individual customers can also shop for our wines directly from our website.</p>
+				</div>
+			</section>
+
+			<section id="products">
+				<h2 class="uppercase text-center pb-4 header">Our wines</h2>
+				<!--<p class="p-intro">Get a 20% discount when you buy up to 6 wines</p>-->
+				<div class="product-wrapper">
+					<div class="product-item card shadow-sm">
+						<img src="images/product-images/santa-white.jpg" alt="santa white" class="card-img-top">
+						<div class="product-title card-body">
+							<a href="products/product1.html" class="p-title-link">
+								<h4 class="productName">Santa Esperanca White</h4>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button data-product-id="1" class="add-btn">
+									Add  <i class="fas fa-cart-plus"></i> 
+								</button>
+							</div>
+						</div>
+					</div>
+					<!--end of product-item div-->
+
+					<div class="product-item card shadow-sm">
+						<img src="images/product-images/santa-red.png" alt="santa red" class="card-img-top">
+						<div class="product-title card-body" >
+							<a href="products/product2.html" class="p-title-link">
+								<h4 class="productName">Santa Esperanca Red</h4>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button data-product-id="2" class="add-btn">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<!--end of product item div-->
+
+					<div class="product-item card shadow-sm">
+						<img src="images/product-images/santa-rose.png" alt="santa Rose" class="card-img-top">
+						<div class="product-title card-body">
+							<a href="products/product3.html" class="p-title-link">
+								<h4 class="productName">Santa Esperanca Rose</h4>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button data-product-id="3" class="add-btn">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<!--end of product-item div-->
+
+					<div class="product-item card shadow-sm">
+						<img src="images/product-images/adega-red.png" alt="adega red" class="card-img-top">
+						<div class="product-title card-body">
+							<a href="products/product4.html" class="p-title-link">
+								<h4 class="productName">Adega do Moleiro red</h4>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span> 
+								</p>
+								<button data-product-id="4" class="add-btn">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!--end of product-item div-->
+					<div class="product-item card shadow-sm">
+						<img src="images/product-images/beroni-white.jpg" alt="Beroni white" class="card-img-top beroni-white">
+						<div class="product-title card-body">
+							<a href="products/product5.html" class="p-title-link">
+								<h4 class="productName">Beroni White</h4>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button data-product-id="5" class="add-btn">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!--end of product-item div-->
+					<div class="product-item card shadow-sm">
+						<img src="images/product-images/beroni-red.jpg" alt="Beroni red" class="card-img-top">
+						<div class="product-title card-body">
+							<a href="products/product6.html" class="p-title-link">
+								<h4 class="productName">Beroni red</h4>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value"> 2500</span>
+								</p>
+								<button data-product-id="6" class="add-btn">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+							<!--end of product inner div-->
+						</div>
+						<!--end of product title div-->
+					</div>
+					<!--end of product item div-->
+				</div>
+			</section>
+			<section id="contact">
+				<h3 class="text-center uppercase pb-4 header">Contact Us</h3>
+				<p class="p-intro">Got any questions? call us or text or or simply fill the form below </p>
+				<div class="contact-wrapper">
+					<div class="contact-info">
+						<div class="contact-info-wrapper shadow-sm">
+							<div class="email contact-item">
+								<div class="contact-title">
+									<i class="fas fa-envelope"></i>
+									<h5>Email</h5>
+								</div>
+								<p>adventuradulcemio@gmail.com</p>
+							</div>
+							<div class="phone contact-item">
+								<div class="contact-title">
+									<i class="fas fa-phone"></i>
+									<h5>Phone</h5>
+								</div>
+								<div class="phone-num">
+									<p>08012345678</p>
+									<p>08012345678</p>
+								</div>
+							</div>
+							<div class="address contact-item">
+								<div class="contact-title">
+									<i class="fas fa-map-marker-alt"></i>
+									<h5>Address</h5>
+								</div>
+								<p>No 120 lungi multipurpose market, maitama, abuja.</p>
+							</div>
+							<div class="socials contact-item">
+								<h5 class="">Connect</h5>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="contact-form">
+						<h4></h4>
+						<form action="#" netlify>
+							<div class="form-item">
+								<label for="name">Your name</label>
+								<input type="text" placeholder="name..." class="form-control">
+							</div>
+							<div class="form-item">
+								<label for="email">Your email</label>
+								<input type="email" placeholder="email..." class="form-control">
+							</div>
+							<div class="form-item">
+								<label for="subject">Subject(optional)</label>
+								<input type="text" placeholder="subject..." class="form-control">
+							</div>
+							<div>
+								<label for="message">Message</label>
+								<textarea name="" id="" cols="10" rows="5" placeholder="Your message" class="form-control"></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				
+			</section>
+
+			<footer id="footer">
+				<div class="footer-wrapper">
+					<div class="footer-cta pb-5">
+						<h2 class="pb-4">Want to buy in Bulk Quantity?</h2>
+						<a href="#contact" class="footer-btn">Lets Chat</a>
+					</div>
+					<div class="footer-links">
+						<h5 class="pb-3 uppercase">Quick Links</h5>
+						<a href="#about">About</a>
+						<a href="#products">Products</a>
+						<a href="#contact">Contact</a>
+					</div>
+					<div class="footer-socials">
+						<h5 class="pb-4 uppercase">Connect</h5>
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+				<p class="attribution pt-4">&copy; copyright Adventura Dulcemio wines 2022. Built by <a href="#">Digital Hub</a></p>
+			</footer>
+		</main>
+			
+		<script src="control.js"></script>
+		<script src="cart.js"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

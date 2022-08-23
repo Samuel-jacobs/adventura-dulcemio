@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Product/Adega do Moleiro Red</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!--fontawesome-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="/product.css">
+	</head>
+	<body>
+		<header>
+			<div class="topnav fixed-top shadow-sm" id="myTopnav">
+				<div class="nav-logo">
+					<a href="/index.html" class="navbar-brand">Adventura</a>
+				</div>
+				<div class="overlay-wrapper">
+					<div class="overlay" id="myNav">
+						<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+						<div class="navlinks">
+							<a href="/index.html#about-us">About Us</a>
+							<a href="/index.html#products">Wines</a>
+							<a href="/index.html#contact">Contact</a>
+							<a href="#">Wholesale </a>
+						</div>
+					</div>
+					<div class="nav-cart">
+						<div class="cart-link">
+							<a href="javascript:void(0)" class="cartBtn" onclick="openCart()" title="open cart"><i class="fas fa-cart-plus"></i> </a>
+							<span id="cart-notification"></span>
+						</div>
+						<span onclick="openNav()" class="openBtn" title="open nav"><i class="fas fa-bars"></i></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="cart">
+				<div class="cart-main">
+					<div class="cart-top">
+						<h4 class="title font-weight-bold">Your Cart</h4>
+						<a href="javascript:void(0)" class="closeCart" onclick="closeCart()" title="close cart"><i class="fas fa-times"></i></a>
+					</div>	
+					<div id="buyItems">
+						<h4 class="empty">Your cart is empty</h4>
+					</div>
+					<div class="total-wrapper hidden  pt-3 pr-4">
+						<h5>Total</h4>
+						<p id="sumTotal"></p>
+					</div>
+					<button class="btn mt-4 checkout hidden">Check out</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section id="product-main" class="product-item">
+				<div class="product-image">
+					<img src="/images/product-images/adega-red.png" alt="santa white" class="shadow-sm">
+				</div>
+				<div class="product-description">
+					<div class="product-title">
+						<h3 class="uppercase productName">Adega do Moleiro</h3>
+						<p class="price">
+							&#x20A6;<span class="price-value">2500</span>
+						</p>
+					</div>
+					<hr>
+					<div class="cart-wrapper">
+						<!--<div class="quantity">
+							<p class="font-weight-bolder">Quantity</p>
+							<div class="quantity-wrapper">
+								<button id="addQty" class="change-qty"><i class="fas fa-plus"></i></button>
+								<p class="qty" id="qty">0</p>
+								<button id="reduceQty" class="change-qty"><i class="fas fa-minus"></i></button>
+							</div>
+						</div>-->
+						<div class="product-text">
+							<p>Santa Esperanca has an Intense garnet colour, lively and very aromatic. Very persistent but smooth finish. It should be served at a temperature of 16-18ºC. Excellent accompaniment for meat, pastas and pizzas and generally a variety of meals</p>
+							<p class="pt-2"><span class="font-weight-bolder"> Alcohol Content:</span> 13.5%</p>
+						</div>
+						<div class="cart-btn">
+							<button class="add-to-cart add-btn btn" data-product-id="4">
+								Add to cart <i class="fas fa-cart-plus"></i>
+							</button>
+						</div>	
+					</div>
+
+					
+				</div>
+			</section>
+
+			<section id="products">
+				<h2 class="text-center pb-4">You might also like</h2>
+				
+				<div class="product-wrapper">
+					<div class="product-item card shadow-sm">
+						<img src="/images/product-images/santa-red.png" alt="santa red" class="card-img-top">
+						<div class="product-title card-body" >
+							<a href="product2.html" class="p-title-link">
+								<h5 class="productName">Santa Esperanca Red</h5>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button class="add-btn" data-product-id="2">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="product-item card shadow-sm">
+						<img src="/images/product-images/santa-rose.png" alt="santa rose" class="card-img-top">
+						<div class="product-title card-body" >
+							<a href="product3.html" class="p-title-link">
+								<h5 class="productName">Santa Esperanca Rose</h5>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button class="add-btn" data-product-id="3">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="product-item card shadow-sm">
+						<img src="/images/product-images/santa-white.jpg" alt="santa white" class="card-img-top">
+						<div class="product-title card-body" >
+							<a href="product1.html" class="p-title-link">
+								<h5 class="productName">Santa Esperanca White</h5>
+							</a>
+							<div class="product-inner">
+								<p class="price">
+									&#x20A6;<span class="price-value">2500</span>
+								</p>
+								<button class="add-btn" data-product-id="1">
+									Add <i class="fas fa-cart-plus"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<footer id="footer">
+				<div class="footer-wrapper">
+					<div class="footer-cta">
+						<h2 class="pb-4">Want to buy in Bulk Quantity?</h2>
+						<a href="#" class="footer-btn">Lets Chat</a>
+					</div>
+					<div class="footer-links">
+						<h5 class="pb-3">Quick Links</h5>
+						<a href="#">About</a>
+						<a href="#">Products</a>
+						<a href="#">Contact</a>
+					</div>
+					<div class="footer-socials">
+						<h5 class="pb-3">Connect</h5>
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+				<p class="attribution pt-4">&copy; copyright Adventura Dulcemio wines 2022. Built by <a href="#">Digital Hub</a></p>
+			</footer>
+		</main>
+		
+		<script src="/cart.js"></script>
+		<script src="/control.js"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html> 
