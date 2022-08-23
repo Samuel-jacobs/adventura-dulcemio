@@ -8,7 +8,7 @@
 #product-main {
 	
 	padding: 30px;
-	padding-top: 100px;
+	margin-top: 100px;
 }
 .product-description {
 	padding-block: 30px;
@@ -25,20 +25,8 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.quantity-wrapper {
-	border: 1px solid lightgrey;
-	background-color: hsl(223, 64%, 98%);
-	border-radius: 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 40%;
-}
-.quantity-wrapper button {
-	padding: 10px;
-	border: none;
-	background-color: transparent;
-}
+
+
 
 .quantity .fas {
 	color: #9f5057;
