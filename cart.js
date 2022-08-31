@@ -184,14 +184,14 @@ parentElement.addEventListener('click', (e) => {
 
 	document.querySelector('.checkout').addEventListener('click', 
 	function checkOut() {
-	alert("Your order has been received thank you for purchasing");
-	parentElement.innerHTML = '<h4 class="empty">Your cart is empty</h4>';
-	document.querySelector('.checkout').classList.add('hidden');
-	document.querySelector('.total-wrapper').classList.add('hidden');
-	productsInCart = [];
-	closeCart();
-	addCount();
-	updateShoppingCartHTML();
+		alert("Your order has been received thank you for purchasing");
+		parentElement.innerHTML = '<h4 class="empty">Your cart is empty</h4>';
+		document.querySelector('.checkout').classList.add('hidden');
+		document.querySelector('.total-wrapper').classList.add('hidden');
+		productsInCart = [];
+		closeCart();
+		addCount();
+		updateShoppingCartHTML(); 
 });
 
 
